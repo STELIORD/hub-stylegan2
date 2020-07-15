@@ -1,9 +1,7 @@
 import os
 import gradio as gr
 import wget
-import ipywidgets as widgets
 import pretrained_networks
-import PIL.Image
 import numpy as np
 import dnnlib
 import dnnlib.tflib as tflib
