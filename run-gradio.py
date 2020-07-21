@@ -69,5 +69,9 @@ def generate_image(artist, genre, style, seed, scale, truncation):
     all_images = Gs.components.synthesis.run(all_w, **Gs_syn_kwargs)
     return np.squeeze(all_images, axis=0)
 
-
-gr.Interface(generate_image, [artists, genres, styles, seed, scale, truncation], gr.outputs.Image(), capture_session=True).launch()
+title="StyleGAN (Painting Generator)"
+description="This GAN model, trained on WikiArt images, generates a painting based on an artist, style, and genre."
+examples=[
+["Leonardo Da Vinci","Portrait","High Renaissance",0,1,0.5]
+]
+gr.Interface(generate_image, [artists, genres, styles, seed, scale, truncation], gr.outputs.Image(), capture_session=True, title=title, description=description, examples=examples).launch()
