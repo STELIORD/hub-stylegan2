@@ -70,7 +70,7 @@ def generate_image(artist, genre, style, seed, scale, truncation):
     return np.squeeze(all_images, axis=0)
 
 title="Painting Generator (StyleGAN)"
-description="This GAN model, trained on WikiArt images, generates a painting based on an artist, style, and genre."
+description="This GAN model, trained on WikiArt images, generates a never-seen-before painting based on an artist, style, and genre!"
 examples=[
 ["Leonardo Da Vinci","Portrait","High Renaissance",0,1,0.5],
 ["Pablo Picasso", "Landscape", "Cubism",0,0.7,1],
