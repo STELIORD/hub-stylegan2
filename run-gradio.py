@@ -78,4 +78,5 @@ examples=[
 ]
 thumbnail="https://github.com/gradio-app/hub-stylegan2/raw/master/screenshot" \
           ".png?raw=true"
-gr.Interface(generate_image, [artists, genres, styles, seed, scale, truncation], gr.outputs.Image(), capture_session=True, title=title, description=description, examples=examples).launch()
+gr.Interface(generate_image, [artists, genres, styles, seed, scale, truncation], gr.outputs.Image(), capture_session=True, thumbnail=thumbnail,
+             title=title, description=description, examples=examples).launch()
