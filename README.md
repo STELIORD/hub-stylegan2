@@ -1,3 +1,13 @@
+## StyleGAN2 (WikiArt) on Gradio
+
+This repo was forked from [pbaylies/stylegan2](https://github.com/pbaylies/stylegan2), and used this [colab notebook](https://colab.research.google.com/github/Norod/my-colab-experiments/blob/master/WikiArt_Example_Generation_By_Peter_Baylies.ipynb), to generate the interface on https://hub.gradio.app
+
+
+<p align="center">
+  <img src="https://github.com/gradio-app/hub-stylegan2/blob/master/screenshot.png?raw=true"
+</p>
+
+-----------------------------------------------------------------------
 ![Teaser image](./fake_art_portrait.jpg)
 
 * Conditional model trained on WikiArt images [now available for download](https://archive.org/details/wikiart-stylegan2-conditional-model)
