@@ -45,7 +45,7 @@ styles = gr.inputs.Dropdown(
     label='Style'
 )
 
-seed = gr.inputs.Slider(minimum=0, maximum=100000, default=0, label="Seed")
+seed = gr.inputs.Slider(minimum=0, maximum=99999, default=0, label="Seed")
 scale = gr.inputs.Slider(minimum=0, maximum=5, default=1, label='Scale')
 truncation = gr.inputs.Slider(minimum=-2, maximum=2, default=1, label='Truncation')
 
