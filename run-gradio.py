@@ -72,6 +72,10 @@ def generate_image(artist, genre, style, seed, scale, truncation):
 title="Painting Generator (StyleGAN)"
 description="This GAN model, trained on WikiArt images, generates a painting based on an artist, style, and genre."
 examples=[
-["Leonardo Da Vinci","Portrait","High Renaissance",0,1,0.5]
+["Leonardo Da Vinci","Portrait","High Renaissance",0,1,0.5],
+["Pablo Picasso", "Landscape", "Cubism",0,0.7,1],
+["M.C. Escher", "Abstract Painting", "Abstract Expressionism",0,1,1]
 ]
+thumbnail="https://github.com/gradio-app/hub-stylegan2/raw/master/screenshot" \
+          ".png?raw=true"
 gr.Interface(generate_image, [artists, genres, styles, seed, scale, truncation], gr.outputs.Image(), capture_session=True, title=title, description=description, examples=examples).launch()
